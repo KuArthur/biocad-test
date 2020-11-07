@@ -1,0 +1,28 @@
+.deviceInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 330px;
+    width:550px;
+    box-sizing: border-box;
+    background: #F7F7F7;
+    border-radius: 5px;
+    padding: 20px 18px;
+    font-family: TT Norms;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 17px;
+    
+}
+
+.deviceInfo-specName {
+    font-weight: 200;
+}
+
+.deviceInfo-specification {
+    font-weight: 500;
+}
+
+.deviceInfo-specification-blue {
+ color:#4990e2;
+}
