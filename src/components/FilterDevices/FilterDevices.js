@@ -6,20 +6,25 @@ export default function FilterDevices(props) {
     const filterText = props.filterText;
     
     function handleFilterTextChange(e) {
-        return props.onFilterTextChange(e.target.value);
+        props.onFilterTextChange(e.target.value);
     }
 
     return (
-        <div className = 'FilterDevices'>
-            <form>
+        <form>
+            
+            <div className = 'filterDevices'>
+                <div className = 'filterDevices-head'>Enter inventory number, guid or bims id</div>
                 <input  type = 'text'
                         value = {filterText}
                         onChange = {handleFilterTextChange}
+                        className = 'filterDevices-input'
                 />
-                <input type = 'submit'> Search </input>
-            </form>
-            
-        </div>
+                <input  type = 'submit'
+                        value = 'Search'
+                        className = 'filterDevices-button' 
+                />
+            </div>
+        </form>
     )
 
 }

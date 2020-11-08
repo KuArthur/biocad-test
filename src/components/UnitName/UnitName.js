@@ -8,9 +8,9 @@ export default function UnitName(props) {
     const img = props.img;
 
     return (
-        <div className = 'UnitName'>
-            <img src = {img} alt = 'picture' />
-            <span className = 'UnitName-name'> {name} </span>
+        <div className = 'unitName'>
+            <img src = {img} alt = '' />
+            <span className = 'unitName-name'> {name} </span>
         </div>
     )
 }

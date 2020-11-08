@@ -1,10 +1,10 @@
-.UnitName {
+.unitName {
     display: flex;
     align-items: flex-start;
     max-width: 285px;
 }
 
-.UnitName-name {
+.unitName-name {
     font-family: TT Norms;
     font-style: normal;
     font-weight: 500;

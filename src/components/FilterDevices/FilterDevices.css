@@ -1,0 +1,48 @@
+.filterDevices {
+    max-width: 320px;
+}
+
+.filterDevices-input {
+    max-width: 210px;
+    width: 100%;
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.16px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #353535;
+    background: #FFFFFF;
+    border: 1px solid #E9E9E9;
+    box-sizing: border-box;
+    margin-right: 20px;
+}
+
+.filterDevices-button {
+    background: #353535;
+    border-radius: 3px;
+    width: 90px;
+    height: 40px;
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.16px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #FFFFFF;
+}
+
+.filterDevices-head {
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.16px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #8C8C8C;
+    margin-bottom: 16px;
+}

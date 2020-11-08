@@ -1,6 +1,6 @@
-import { render } from '@testing-library/react';
+// import { render } from '@testing-library/react';
 import React from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 
 import './CalibrationReport.css';
 
