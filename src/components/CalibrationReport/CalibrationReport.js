@@ -18,20 +18,20 @@ export default function CalibrationReport(props) {
     ))
 
     return (
-        <table className = 'calibrationReport'>
+        <div className = 'calibrationReport'>
             
-            <thead className = 'calibrationReport-body'>
-                <th>Calibration report</th>
-                <tr className = 'calibrationReport-headers'>
-                    <td>Data</td>
-                    <td>Used buffer solutions</td>
-                    <td>Slope, % Norm 95-105</td>
-                    <td>Offset, mV Norm ±(0-20)</td>
-                    <td>User</td>
-                </tr>
+            <div className = 'calibrationReport-body'>
+                <h2>Calibration report</h2>
+                <div className = 'calibrationReport-headers'>
+                    <div>Data</div>
+                    <div>Used buffer solutions</div>
+                    <div>Slope, % <br /> Norm 95-105</div>
+                    <div>Offset, mV <br /> Norm ±(0-20)</div>
+                    <div>User</div>
+                </div>
                 {rows}
-            </thead>
-        </table>
+            </div>
+        </div>
     )
 }
 
@@ -39,35 +39,35 @@ function CalibrationReportRow(props) {
     const calibrationData = props.calibrationData;
 
     return(
-        <tr className = 'calibrationReport-rows'>
-            <td className = 'calibrationReport-data'>{calibrationData.data}</td>
-            <td className = 'calibrationReport-solution'>{calibrationData.solution}</td>
+        <div className = 'calibrationReport-rows'>
+            <span className = 'calibrationReport-data'>{calibrationData.data}</span>
+            <span className = 'calibrationReport-solution'>{calibrationData.solution}</span>
             {calibrationData.slope < 95 || calibrationData.slope >= 105
-                ?   <td>
+                ?   
                         <div className = 'calibrationReport-slope'>
                             <span>{calibrationData.slope}</span> <Fail />
                         </div>
-                    </td>
-                :   <td>
+                    
+                :   
                         <div className = 'calibrationReport-slope'>
                             <span>{calibrationData.slope}</span> <Success />
                         </div>
-                    </td>  
+                    
             }
             {calibrationData.offset < -1 || calibrationData.offset > 21
-                ?   <td>
+                ?   
                         <div className = 'calibrationReport-offset'>
                             <span>{calibrationData.offset}</span> <Fail />
                         </div>
-                    </td>
-                :   <td>
+                    
+                :   
                         <div className = 'calibrationReport-offset'>
                             <span>{calibrationData.offset}</span> <Success />
                         </div>
-                    </td> 
+                   
             }
             
-            <td className = 'calibrationReport-user'>{calibrationData.user}</td>
-        </tr>
+            <span className = 'calibrationReport-user'>{calibrationData.user}</span>
+        </div>
     )
 }

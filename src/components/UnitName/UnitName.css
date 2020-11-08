@@ -1,0 +1,18 @@
+.UnitName {
+    display: flex;
+    align-items: flex-start;
+    max-width: 285px;
+}
+
+.UnitName-name {
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #353535;
+    white-space: normal;
+    margin-left: 20px;
+}

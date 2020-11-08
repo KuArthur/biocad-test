@@ -1,4 +1,7 @@
 .calibrationReport {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     height: 660px;
     width: 900px;
     border: 1px dashed #939DA6;
@@ -10,28 +13,31 @@
     line-height: 15px;
     text-align: left;
     color: #353535;
-
 }
 
 .calibrationReport-headers {
-    color: #939DA6;
+    display:flex;
+    justify-content: space-between;
 }
 
 .calibrationReport-rows {
-    
-
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .calibrationReport-solution {
-    width: 25%;
-
+    /* width: 25%; */
+    text-align: left;
+    flex-basis: 200px;
 
 }
 
 .calibrationReport-data {
     font-size: 16px;
     line-height: 19px;
-    width:10%
+    /* width:10% */
+   
 }
 
 .calibrationReport-user {
@@ -44,4 +50,5 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
