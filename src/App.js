@@ -6,6 +6,7 @@ import DeviceInfo from './components/DeviceInfo/DeviceInfo'
 import CalibrationReport from './components/CalibrationReport/CalibrationReport';
 import UnitName from './components/UnitName/UnitName';
 import FilterDevices from './components/FilterDevices/FilterDevices';
+import ReportFiltersCheckbox from './components/ReportFilters/ReportFiltersCheckbox/ReportFiltersCheckbox';
 
 import {calibrationReport as calibrationData} from './db/calibrationReport';
 import { deviceInfo } from './db/deviceInfo';
@@ -22,14 +23,15 @@ function App() {
   }
   return (
     // <DeviceInfo device ={deviceInfo} />
-    // <CalibrationReport calibrationData = {calibrationData} />
+     <CalibrationReport calibrationData = {calibrationData} />
     // <UnitName name = {NAME}
     //           img = {item}
     // />
-    <FilterDevices  filterText = {filterText}
-                    onFilterTextChange = {handleFilterTextChange}
+    // <FilterDevices  filterText = {filterText}
+    //                 onFilterTextChange = {handleFilterTextChange}
 
-    />
+    // />
+    // <ReportFiltersCheckbox text = 'Calibration' />
   )
 }
 

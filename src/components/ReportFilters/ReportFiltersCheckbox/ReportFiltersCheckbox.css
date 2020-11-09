@@ -1,0 +1,40 @@
+.reportFiltersCheckbox {
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.16px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #353535;
+}
+
+.reportFiltersCheckbox-input {
+    display:none;
+}
+
+
+
+.reportFiltersCheckbox-text {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.reportFiltersCheckbox-text::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin-right: 12px;
+    background: #FFFFFF;
+    border: 2px solid #C1C1C1;
+}
+
+
+.reportFiltersCheckbox-input:checked + .reportFiltersCheckbox-text::before {
+    background:url(../../../img/radio-circle.svg) no-repeat center;
+}

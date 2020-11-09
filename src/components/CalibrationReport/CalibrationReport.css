@@ -15,29 +15,37 @@
     color: #353535;
 }
 
+.calibrationReport-tableName {
+    margin-bottom: 27px;
+}
+
 .calibrationReport-headers {
     display:flex;
     justify-content: space-between;
+    margin-bottom: 24px;
 }
 
-.calibrationReport-rows {
+.calibrationReport-row {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #E9E9E9;
+    padding-bottom: 20px;
+}
+
+.calibrationReport-row:last-child {
+    margin-bottom: 0;
 }
 
 .calibrationReport-solution {
-    /* width: 25%; */
     text-align: left;
     flex-basis: 200px;
-
 }
 
 .calibrationReport-data {
     font-size: 16px;
     line-height: 19px;
-    /* width:10% */
-   
 }
 
 .calibrationReport-user {
@@ -48,7 +56,21 @@
 
 .calibrationReport-offset,.calibrationReport-slope {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-around; */
     align-items: center;
-    
+}
+
+.calibrationReport-icon {
+    margin-left: 24px;
+}
+
+.column-width-l  {
+    width: 24%;
+}
+
+.column-width-s {
+    width: 11%;
+}
+.column-width-m  {
+    width: 30%
 }
