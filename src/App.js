@@ -21,6 +21,13 @@ const NAME = 'Аналитические весы OHAUS Adventurer АХ324 (B715
 
 const checkboxCaptions = ['Calibration', 'Measuring', 'Using'];
 
+const options = [
+  {key: 1, value: '1 month'},
+  {key: 2, value: '2 month'},
+  {key: 3, value: '3 month'},
+  {key: 4, value: '4 month'}
+]
+
 function App() {
   const [filterText, setFilterText] = useState('A-001234');
   
@@ -44,7 +51,7 @@ function App() {
     //   <ReportFiltersCheckbox text = 'Calibration' />
     // </div>
     // <ReportFilters />
-    <DropList />
+    // <DropList options = {options}/>
   )
 }
 
