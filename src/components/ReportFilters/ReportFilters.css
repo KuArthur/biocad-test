@@ -1,6 +1,19 @@
-.reportFiltersButton {
+.reportFilters {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.reportFilters-button {
     width: 180px;
     height: 40px;
     border-radius: 3px;
     background: #4990E2;
+    margin-top: 52px;
+}
+
+.reportFilters-ratioButtons {
+    margin-top: 20px;
+}
+
+.reportFilters-dropList {
+    max-width: 220px;
 }

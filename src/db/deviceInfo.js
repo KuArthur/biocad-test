@@ -1,6 +1,7 @@
 export const deviceInfo = [
     {
         type: 'Весы',
+        name: 'Аналитические весы OHAUS Adventurer АХ324 (B715976163)',
         status: 'Готов к работе',
         manufacturer: 'Ohaus',
         model: 'AX-123',

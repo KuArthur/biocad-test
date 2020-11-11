@@ -6,10 +6,9 @@ import DeviceInfo from './components/DeviceInfo/DeviceInfo'
 import CalibrationReport from './components/CalibrationReport/CalibrationReport';
 import UnitName from './components/UnitName/UnitName';
 import FilterDevices from './components/FilterDevices/FilterDevices';
-// import ReportFiltersCheckbox from './components/ReportFilters/ReportFiltersCheckbox/ReportFiltersCheckbox';
-// import ReportFiltersButton from './components/ReportFilters/ReportFiltersButton/ReportFiltersButton';
+
 import ReportFilters from './components/ReportFilters/ReportFilters';
-import DropList from './components/DropList/DropList';
+// import DropList from './components/DropList/DropList';
 
 
 import {calibrationReport as calibrationData} from './db/calibrationReport';
@@ -35,22 +34,32 @@ function App() {
     setFilterText(filterText)
   }
   return (
-    // <DeviceInfo device ={deviceInfo} />
-    //  <CalibrationReport calibrationData = {calibrationData} />
-    // <UnitName name = {NAME}
-    //           img = {item}
-    // />
-    // <FilterDevices  filterText = {filterText}
-    //                 onFilterTextChange = {handleFilterTextChange}
+    // слишком большая вложенность div'ов?
+    <div className = 'app'>
+      <div className = 'app-top'>
+        <div className = 'app-leftColumn'>
+          <div className = 'app-filterDevices'>
+          <FilterDevices  filterText = {filterText}
+                          onFilterTextChange = {handleFilterTextChange}
 
-    // />
-    
-    // <div className = 'ReportFiltersCheckboxes'>
-    //   <ReportFiltersCheckbox text = 'Calibration' />
-    //   <ReportFiltersCheckbox text = 'Calibration' />
-    //   <ReportFiltersCheckbox text = 'Calibration' />
-    // </div>
-    // <ReportFilters />
+          />
+          </div>
+          <div className = 'app-unitName'>
+            <UnitName name = {NAME}
+                      img = {item}
+            />
+          </div>
+          
+          <ReportFilters />
+        </div>
+        <div className = 'app-rightColumn'>
+          <DeviceInfo device ={deviceInfo} />
+        </div>
+      </div>
+      <div className = 'app-bottom'>
+        <CalibrationReport calibrationData = {calibrationData} />
+      </div>
+    </div>
     // <DropList options = {options}/>
   )
 }

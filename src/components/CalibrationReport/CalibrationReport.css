@@ -2,8 +2,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 660px;
-    width: 900px;
+    max-width: 900px;
     border: 1px dashed #939DA6;
     box-sizing: border-box;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
@@ -17,6 +16,7 @@
 
 .calibrationReport-tableName {
     margin-bottom: 27px;
+    margin-top: 0;
 }
 
 .calibrationReport-headers {
@@ -35,12 +35,16 @@
 }
 
 .calibrationReport-row:last-child {
+    border-bottom: none;
+}
+
+.calibrationReport-row:last-child {
     margin-bottom: 0;
 }
 
 .calibrationReport-solution {
-    text-align: left;
-    flex-basis: 200px;
+    /* text-align: left; */
+    /* flex-basis: 200px; */
 }
 
 .calibrationReport-data {

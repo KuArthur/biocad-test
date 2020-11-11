@@ -12,15 +12,16 @@
     font-style: normal;
     font-size: 14px;
     line-height: 17px;
+    font-weight: 500;
     
 }
 
 .deviceInfo-specName {
-    font-weight: 200;
+    color: #8C8C8C;
 }
 
 .deviceInfo-specification {
-    font-weight: 500;
+    color: #444651;
 }
 
 .deviceInfo-specification-blue {

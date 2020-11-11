@@ -1,5 +1,29 @@
 @import './fonts/TTNorms/stylesheet.css';
 
-.ReportFiltersCheckboxes {
+.app {
+    padding: 30px 50px;
+}
+
+.app-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 900px;
+    margin: auto;
+
+}
+
+.app-bottom {
+    margin-top: 46px;
+    display: flex;
+    justify-content: center;
     
+}
+
+.app-filterDevices {
+    
+}
+
+.app-unitName {
+    margin: 30px 0;
 }
