@@ -1,4 +1,4 @@
-.reportFiltersCheckbox {
+.ratioButton {
     font-family: TT Norms;
     font-style: normal;
     font-weight: normal;
@@ -7,15 +7,20 @@
     letter-spacing: 0.16px;
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: #353535;
+    margin-bottom: 12px;
 }
 
-.reportFiltersCheckbox-input {
+.ratioButton:last-child {
+    margin-bottom: 0;
+}
+
+.ratioButton-input {
     display:none;
 }
 
 
 
-.reportFiltersCheckbox-text {
+.ratioButton-text {
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -23,7 +28,7 @@
     
 }
 
-.reportFiltersCheckbox-text::before {
+.ratioButton-text::before {
     content: "";
     width: 20px;
     height: 20px;
@@ -35,6 +40,6 @@
 }
 
 
-.reportFiltersCheckbox-input:checked + .reportFiltersCheckbox-text::before {
-    background:url(../../../img/radio-circle.svg) no-repeat center;
+.ratioButton-input:checked + .ratioButton-text::before {
+    background:url(../../img/radio-circle.svg) no-repeat center;
 }

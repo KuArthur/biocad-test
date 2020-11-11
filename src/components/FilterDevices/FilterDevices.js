@@ -2,6 +2,8 @@ import React from 'react';
 
 import './FilterDevices.css';
 
+import Button from '../Button/Button'
+
 export default function FilterDevices(props) {
     const filterText = props.filterText;
     
@@ -19,9 +21,8 @@ export default function FilterDevices(props) {
                         onChange = {handleFilterTextChange}
                         className = 'filterDevices-input'
                 />
-                <input  type = 'submit'
+                <Button className = 'filterDevices-button'
                         value = 'Search'
-                        className = 'filterDevices-button' 
                 />
             </div>
         </form>
