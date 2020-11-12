@@ -31,11 +31,8 @@ function App() {
   const [filterText, setFilterText] = useState(defaultDevice.tam);
   const [device, setDevice] = useState(defaultDevice);
 
-  
   function handleFilterTextChange(filterText) {
     setFilterText(filterText)
-    
-    
   }
 
   // useEffect(() => {
@@ -56,7 +53,6 @@ function App() {
     }
   }
 
-
   return (
     // слишком большая вложенность div'ов?
 
@@ -69,7 +65,6 @@ function App() {
           <FilterDevices  filterText = {filterText}
                           onFilterTextChange = {handleFilterTextChange}
                           onDeviceChange = {handleDeviceChange}
-
           />
           </div>
           <div className = 'app-unitName'>

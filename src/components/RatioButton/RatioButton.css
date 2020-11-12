@@ -18,14 +18,10 @@
     display:none;
 }
 
-
-
 .ratioButton-text {
     cursor: pointer;
     display: flex;
     align-items: center;
-    
-    
 }
 
 .ratioButton-text::before {
@@ -38,7 +34,6 @@
     background: #FFFFFF;
     border: 2px solid #C1C1C1;
 }
-
 
 .ratioButton-input:checked + .ratioButton-text::before {
     background:url(../../img/radio-circle.svg) no-repeat center;

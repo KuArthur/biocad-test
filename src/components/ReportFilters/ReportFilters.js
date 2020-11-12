@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import RatioButton from '../RatioButton/RatioButton';
 import Button from '../Button/Button';
@@ -16,11 +16,22 @@ const options = [               //лучше делать в компонент�
   ]
 
 export default function ReportFilters(props) {
-    const ratioButtons = []
+    const [checked, setChecked] = useState(INSCRIPTIONS[0]);
+
+    function handleChecked(value) {
+        setChecked(value);
+    }
+
+    const ratioButtons = [];
     INSCRIPTIONS.forEach((inscription,i) => (
+        
+        // inscription === 'Calibration' ?
         ratioButtons.push(<RatioButton  text = {inscription}
                                         name = 'ReportFilters' 
                                         key = {inscription + i}
+                                        checked = {checked === inscription}
+                                        onChecked = {handleChecked}
+                                        value= {inscription === 'Calibration' ? 'Calibration' : inscription }
         />)
     ))
 

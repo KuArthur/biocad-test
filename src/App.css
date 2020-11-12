@@ -10,14 +10,13 @@
     align-items: flex-end;
     max-width: 900px;
     margin: auto;
-
 }
 
 .app-bottom {
-    margin-top: 46px;
+    margin: 46px auto 0;
     display: flex;
+    width: 900px;
     justify-content: center;
-    
 }
 
 .app-filterDevices {

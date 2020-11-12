@@ -12,7 +12,7 @@ export default function DeviceInfo(props) {
     const device = props.device;
     const rows = []
     
-    const newDevice = Object.fromEntries(Object.entries(device).filter(([key,value]) => key !="name"))
+    const newDevice = Object.fromEntries(Object.entries(device).filter(([key,value]) => key !=="name"))
     INFO_NAMES.forEach((specName,i) => (
          //TODO: убрать forEach
         rows.push(
