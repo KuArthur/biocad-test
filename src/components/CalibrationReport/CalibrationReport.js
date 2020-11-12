@@ -13,9 +13,11 @@ import {ReactComponent as Fail} from '../../img/fail.svg';
 export default function CalibrationReport(props) {
     const calibrationData = props.calibrationData;
     const rows = [];
-    calibrationData.forEach(data => (
+    calibrationData.forEach((data,i) => (
         rows.push(
-            <CalibrationReportRow   calibrationData = {data} />
+            <CalibrationReportRow   calibrationData = {data}
+                                    key = {i}
+             />
         )
     ))
 

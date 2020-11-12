@@ -17,9 +17,10 @@ const options = [               //лучше делать в компонент�
 
 export default function ReportFilters(props) {
     const ratioButtons = []
-    INSCRIPTIONS.forEach(inscription => (
+    INSCRIPTIONS.forEach((inscription,i) => (
         ratioButtons.push(<RatioButton  text = {inscription}
                                         name = 'ReportFilters' 
+                                        key = {inscription + i}
         />)
     ))
 

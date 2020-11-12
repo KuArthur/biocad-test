@@ -12,15 +12,15 @@ export default function DeviceInfo(props) {
     const device = props.device;
     const rows = []
     
+    const newDevice = Object.fromEntries(Object.entries(device).filter(([key,value]) => key !="name"))
     INFO_NAMES.forEach((specName,i) => (
-        device.forEach(device => (
-            rows.push(
-                <DeviceInfoRow  device = {Object.values(device)[i]}
-                                specificationName = {specName}
-                />
-            )
-        ))
-                    
+         //TODO: убрать forEach
+        rows.push(
+            <DeviceInfoRow  device = {Object.values(newDevice)[i]}
+                            specificationName = {specName}
+                            key = {i} //TODO: подумать, какой ключ поставить
+            />
+        )             
     ))
 
     return (
@@ -34,16 +34,12 @@ function DeviceInfoRow(props) {
     const device = props.device
     const specificationName = props.specificationName;
 
+    const classColor = specificationName === 'GUID'|| specificationName === 'Bims ID'|| specificationName === 'Tam' ? '-blue' : '';
+
     return (
-    specificationName === 'GUID'|| specificationName === 'Bims ID'|| specificationName === 'Tam' ?
         <div className = 'deviceInfo-row'>
             <span className = 'deviceInfo-specName'>{specificationName}: </span>
-            <span className = 'deviceInfo-specification-blue'>{device}</span>
-        </div>
-        :
-        <div className = 'deviceInfo-row'>
-            <span className = 'deviceInfo-specName'>{specificationName}: </span>
-            <span className = 'deviceInfo-specification'>{device}</span>
+            <span className = {'deviceInfo-specification' +classColor}>{device}</span>
         </div>
     )
 }

@@ -1,5 +1,5 @@
 .filterDevices {
-    max-width: 320px;
+    width: 100%;
 }
 
 .filterDevices-input {
@@ -17,6 +17,7 @@
     border: 1px solid #E9E9E9;
     box-sizing: border-box;
     margin-right: 20px;
+    padding-left: 12px;
 }
 
 .filterDevices-button {

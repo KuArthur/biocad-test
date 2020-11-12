@@ -9,10 +9,16 @@ export default function FilterDevices(props) {
     
     function handleFilterTextChange(e) {
         props.onFilterTextChange(e.target.value);
+        
+    }
+
+    function handleDeviceChange(e) {
+        props.onDeviceChange();
+        e.preventDefault()
     }
 
     return (
-        <form>
+        <form onSubmit = {handleDeviceChange}>
             
             <div className = 'filterDevices'>
                 <div className = 'filterDevices-head'>Enter inventory number, guid or bims id</div>
