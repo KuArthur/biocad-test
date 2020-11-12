@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/biocad-test/static/css/main.f2b0f171.chunk.css",
+    "main.js": "/biocad-test/static/js/main.6247c410.chunk.js",
+    "main.js.map": "/biocad-test/static/js/main.6247c410.chunk.js.map",
+    "runtime-main.js": "/biocad-test/static/js/runtime-main.3013edfd.js",
+    "runtime-main.js.map": "/biocad-test/static/js/runtime-main.3013edfd.js.map",
+    "static/js/2.e204e9b1.chunk.js": "/biocad-test/static/js/2.e204e9b1.chunk.js",
+    "static/js/2.e204e9b1.chunk.js.map": "/biocad-test/static/js/2.e204e9b1.chunk.js.map",
+    "static/js/3.e0449168.chunk.js": "/biocad-test/static/js/3.e0449168.chunk.js",
+    "static/js/3.e0449168.chunk.js.map": "/biocad-test/static/js/3.e0449168.chunk.js.map",
+    "index.html": "/biocad-test/index.html",
+    "static/css/main.f2b0f171.chunk.css.map": "/biocad-test/static/css/main.f2b0f171.chunk.css.map",
+    "static/js/2.e204e9b1.chunk.js.LICENSE.txt": "/biocad-test/static/js/2.e204e9b1.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/biocad-test/static/media/TTNorms-ThinItalic.ffc52b11.woff2",
+    "static/media/droplist-icon.e0ee23d5.svg": "/biocad-test/static/media/droplist-icon.e0ee23d5.svg",
+    "static/media/fail.9278c2b3.svg": "/biocad-test/static/media/fail.9278c2b3.svg",
+    "static/media/item.40e6f0bd.svg": "/biocad-test/static/media/item.40e6f0bd.svg",
+    "static/media/RatioButton.css": "/biocad-test/static/media/radio-circle.ac757fed.svg",
+    "static/media/success.c5fc0897.svg": "/biocad-test/static/media/success.c5fc0897.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3013edfd.js",
+    "static/js/2.e204e9b1.chunk.js",
+    "static/css/main.f2b0f171.chunk.css",
+    "static/js/main.6247c410.chunk.js"
+  ]
+}
