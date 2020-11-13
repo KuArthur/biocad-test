@@ -13,7 +13,7 @@ export const deviceInfo = [
         guid: '508b2a71-662e-4983-ae0c-3cb0c1cd21c5',
         bims_id: '49db8db1-585f-4b9e-bbf0-8a59698edc8b',
         tam: 'А-001234',
-        img: 'C:/Users/к/Desktop/project/react/biocad-test/src/img/item.svg',
+        img: process.env.PUBLIC_URL +'/img/item1.svg',
         calibrationReport: [
             {
                 data: '04.10.19 10:23',
@@ -59,6 +59,7 @@ export const deviceInfo = [
         guid: '508b2a71-613e-4423-ae53-7770c1cd55cxxz',
         bims_id: '111111-2222-3333-4444-12345678911223',
         tam: 'А-005678',
+        img: process.env.PUBLIC_URL +'/img/item2.svg',
         calibrationReport: [
             {
                 data: '05.10.20 11:56',

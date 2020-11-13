@@ -1,4 +1,4 @@
-.ratioButton {
+.radioButton {
     font-family: TT Norms;
     font-style: normal;
     font-weight: normal;
@@ -7,24 +7,24 @@
     letter-spacing: 0.16px;
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: #353535;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
-.ratioButton:last-child {
+.radioButton:last-child {
     margin-bottom: 0;
 }
 
-.ratioButton-input {
+.radioButton-input {
     display:none;
 }
 
-.ratioButton-text {
+.radioButton-text {
     cursor: pointer;
     display: flex;
     align-items: center;
 }
 
-.ratioButton-text::before {
+.radioButton-text::before {
     content: "";
     width: 20px;
     height: 20px;
@@ -35,6 +35,6 @@
     border: 2px solid #C1C1C1;
 }
 
-.ratioButton-input:checked + .ratioButton-text::before {
+.radioButton-input:checked + .radioButton-text::before {
     background:url(../../img/radio-circle.svg) no-repeat center;
 }

@@ -1,14 +1,9 @@
-// import { render } from '@testing-library/react';
 import React from 'react';
-// import ReactDOM from 'react-dom';
 
 import './CalibrationReport.css';
 
-import {calibrationReport} from '../../db/calibrationReport';
-import {ReactComponent as Success} from '../../img/success.svg';
-import {ReactComponent as Fail} from '../../img/fail.svg';
-
-// const HEAD = ['Data','Used buffer solutions','Slope, % Norm 95-105','Offset, mV Norm ±(0-20)','User']
+import success from '../../img/success.svg';
+import fail from '../../img/fail.svg';
 
 export default function CalibrationReport(props) {
     const calibrationData = props.calibrationData;
@@ -41,36 +36,28 @@ export default function CalibrationReport(props) {
 
 function CalibrationReportRow(props) {
     const calibrationData = props.calibrationData;
-
+    const slope = calibrationData.slope
+    const offset = calibrationData.offset
+    
     return(
         <div className = 'calibrationReport-row'>
             <span className = 'calibrationReport-data column-width-s'>{calibrationData.data}</span>
             <span className = 'calibrationReport-solution column-width-l'>{calibrationData.solution}</span>
-            {calibrationData.slope < 95 || calibrationData.slope >= 105
-                ?   
-                        <div className = 'calibrationReport-slope column-width-s'>
-                            <span>{calibrationData.slope}</span> <Fail className = 'calibrationReport-icon' />
-                        </div>
-                    
-                :   
-                        <div className = 'calibrationReport-slope column-width-s'>
-                            <span>{calibrationData.slope}</span> <Success className = 'calibrationReport-icon' />
-                        </div>
-                    
-            }
-            {calibrationData.offset < -1 || calibrationData.offset > 21
-                ?   
-                        <div className = 'calibrationReport-offset column-width-s'>
-                            <span>{calibrationData.offset}</span> <Fail className = 'calibrationReport-icon' />
-                        </div>
-                    
-                :   
-                        <div className = 'calibrationReport-offset column-width-s'>
-                            <span>{calibrationData.offset}</span> <Success className = 'calibrationReport-icon' />
-                        </div>
+           
+            <div className = 'calibrationReport-slope column-width-s'>
+                <span>{slope}</span> 
+                <img    src = {(slope < 95 || slope >= 105)  ? fail : success} alt = ''
+                        className = 'calibrationReport-icon'
+                />
+            </div>
+                
+            <div className = 'calibrationReport-offset column-width-s'>
+                <span>{offset}</span> 
+                <img    src = {offset < - 1 || offset > 21 ? fail : success} alt = ''
+                        className = 'calibrationReport-icon'
+                />
+            </div>
                    
-            }
-            
             <span className = 'calibrationReport-user column-width-m'>{calibrationData.user}</span>
         </div>
     )

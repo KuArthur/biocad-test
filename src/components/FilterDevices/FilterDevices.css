@@ -5,6 +5,7 @@
 .filterDevices-input {
     max-width: 210px;
     width: 100%;
+    height: 30px;
     font-family: TT Norms;
     font-style: normal;
     font-weight: normal;
@@ -25,6 +26,11 @@
     border-radius: 3px;
     width: 90px;
     height: 40px;
+}
+
+.filterDevices-wrap {
+    display: flex;
+    align-items: center;
 }
 
 .filterDevices-head {

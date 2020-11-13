@@ -15,7 +15,7 @@
 }
 
 .calibrationReport-tableName {
-    margin-bottom: 27px;
+    margin-bottom: 30px;
     margin-top: 0;
 }
 
@@ -36,9 +36,6 @@
 
 .calibrationReport-row:last-child {
     border-bottom: none;
-}
-
-.calibrationReport-row:last-child {
     margin-bottom: 0;
 }
 
@@ -61,13 +58,17 @@
     margin-left: 24px;
 }
 
+.calibrationReport-solution {
+    line-height: 16px;
+}
+
 .column-width-l  {
-    width: 24%;
+    width: 25%;
 }
 
 .column-width-s {
     width: 11%;
 }
 .column-width-m  {
-    width: 30%
+    width: 27%
 }

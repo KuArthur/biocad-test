@@ -1,26 +1,34 @@
-// import { render } from '@testing-library/react';
 import React from 'react';
-// import ReactDOM from 'react-dom';
 
 import './DeviceInfo.css';
 
-const INFO_NAMES = ['Тип оборудования','Статус','Изготовитель','Модель',
-                    'Ответственное подразделение (ремонт)','Эксплуатирующее подразделение','МОЛ','Территория',
-                    'Серийный номер','GUID','Bims ID','Tam']
+const INFO_NAMES = ['type','status', 'manufacturer', 'model', 'repairs', 'using',
+                    'person','country','serial_number',
+                    'guid','bims_id','tam']
+
+const translate = {
+    type: 'Тип оборудования',
+    status: 'Статус',
+    manufacturer: 'Изготовитель',
+    model: 'Модель',
+    repairs: 'Ответственное подразделение (ремонт)',
+    using: 'Эксплуатирующее подразделение',
+    person: 'МОЛ',
+    country: 'Территория',
+    serial_number: 'Серийный номер',
+    guid: 'GUID',
+    bims_id: 'Bims ID',
+    tam: 'Tam',
+}
 
 export default function DeviceInfo(props) {
     const device = props.device;
-    const rows = []
     
-    const newDevice = Object.fromEntries(Object.entries(device).filter(([key,value]) => key !=="name"))
-    INFO_NAMES.forEach((specName,i) => (
-         //TODO: убрать forEach
-        rows.push(
-            <DeviceInfoRow  device = {Object.values(newDevice)[i]}
-                            specificationName = {specName}
-                            key = {i} //TODO: подумать, какой ключ поставить
-            />
-        )             
+    const rows = INFO_NAMES.map((specName,i) => (
+         <DeviceInfoRow  device = {device[specName]}
+                                specificationName = {translate[specName]}
+                                key = {specName}
+                />
     ))
 
     return (
@@ -34,8 +42,7 @@ function DeviceInfoRow(props) {
     const device = props.device
     const specificationName = props.specificationName;
 
-    const classColor = specificationName === 'GUID'|| specificationName === 'Bims ID'|| specificationName === 'Tam' ? '-blue' : '';
-
+    const classColor = ['GUID','Bims ID','Tam'].includes(specificationName) ? '-blue' : '';
     return (
         <div className = 'deviceInfo-row'>
             <span className = 'deviceInfo-specName'>{specificationName}: </span>

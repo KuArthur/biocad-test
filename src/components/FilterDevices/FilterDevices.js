@@ -22,14 +22,16 @@ export default function FilterDevices(props) {
             
             <div className = 'filterDevices'>
                 <div className = 'filterDevices-head'>Enter inventory number, guid or bims id</div>
-                <input  type = 'text'
-                        value = {filterText}
-                        onChange = {handleFilterTextChange}
-                        className = 'filterDevices-input'
-                />
-                <Button className = 'filterDevices-button'
-                        value = 'Search'
-                />
+                <div className = 'filterDevices-wrap'>
+                    <input  type = 'text'
+                            value = {filterText}
+                            onChange = {handleFilterTextChange}
+                            className = 'filterDevices-input'
+                    />
+                    <Button className = 'filterDevices-button'
+                            value = 'Search'
+                    />
+                </div>
             </div>
         </form>
     )

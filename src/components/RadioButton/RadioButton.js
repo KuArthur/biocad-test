@@ -1,9 +1,8 @@
 import React from 'react';
 
-import './RatioButton.css';
+import './RadioButton.css';
 
-export default function RatioButton(props) {
-    
+export default function RadioButton(props) {
     const {
         text,
         name,
@@ -13,17 +12,18 @@ export default function RatioButton(props) {
     function handleChecked(e) {
         props.onChecked(e.target.value)
     }
+    
     return (
-        <div className = 'ratioButton'>
+        <div className = 'radioButton'>
             <input  type = 'radio'
-                    className = 'ratioButton-input'
+                    className = 'radioButton-input'
                     id = {text}
                     name= {name}
                     checked = {checked}
                     onChange = {handleChecked}
                     value = {text}
             />
-            <label className = 'ratioButton-text' for={text}>{text}</label>
+            <label className = 'radioButton-text' for={text}>{text}</label>
         </div>
     )
 }

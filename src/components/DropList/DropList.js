@@ -25,8 +25,7 @@ export default function DropList(props) {
     let items = options.map((option) => (
         <DropListMenuItem   key = {option.key}
                             option = {option}
-                            onSelect = {handleSelect}
-                            
+                            onSelect = {handleSelect}         
         />
     ))
     

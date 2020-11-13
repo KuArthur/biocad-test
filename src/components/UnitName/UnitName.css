@@ -13,6 +13,11 @@
     letter-spacing: 0.5px;
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: #353535;
-    white-space: normal;
     margin-left: 20px;
+}
+
+.unitName-img {
+    width: 40px;
+    height: 40px;
+    margin-top: 3px;
 }
