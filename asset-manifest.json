@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/biocad-test/static/css/main.93b2276b.chunk.css",
-    "main.js": "/biocad-test/static/js/main.2e8ff6f4.chunk.js",
-    "main.js.map": "/biocad-test/static/js/main.2e8ff6f4.chunk.js.map",
+    "main.css": "/biocad-test/static/css/main.2bccc5a5.chunk.css",
+    "main.js": "/biocad-test/static/js/main.c7f4a550.chunk.js",
+    "main.js.map": "/biocad-test/static/js/main.c7f4a550.chunk.js.map",
     "runtime-main.js": "/biocad-test/static/js/runtime-main.3013edfd.js",
     "runtime-main.js.map": "/biocad-test/static/js/runtime-main.3013edfd.js.map",
     "static/js/2.e204e9b1.chunk.js": "/biocad-test/static/js/2.e204e9b1.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.e0449168.chunk.js": "/biocad-test/static/js/3.e0449168.chunk.js",
     "static/js/3.e0449168.chunk.js.map": "/biocad-test/static/js/3.e0449168.chunk.js.map",
     "index.html": "/biocad-test/index.html",
-    "static/css/main.93b2276b.chunk.css.map": "/biocad-test/static/css/main.93b2276b.chunk.css.map",
+    "static/css/main.2bccc5a5.chunk.css.map": "/biocad-test/static/css/main.2bccc5a5.chunk.css.map",
     "static/js/2.e204e9b1.chunk.js.LICENSE.txt": "/biocad-test/static/js/2.e204e9b1.chunk.js.LICENSE.txt",
     "static/media/App.css": "/biocad-test/static/media/TTNorms-ThinItalic.ffc52b11.woff2",
     "static/media/droplist-icon.e0ee23d5.svg": "/biocad-test/static/media/droplist-icon.e0ee23d5.svg",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.3013edfd.js",
     "static/js/2.e204e9b1.chunk.js",
-    "static/css/main.93b2276b.chunk.css",
-    "static/js/main.2e8ff6f4.chunk.js"
+    "static/css/main.2bccc5a5.chunk.css",
+    "static/js/main.c7f4a550.chunk.js"
   ]
 }
